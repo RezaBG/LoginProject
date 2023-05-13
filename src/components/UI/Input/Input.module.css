@@ -5,7 +5,8 @@
   flex-direction: column;
 }
 
-.control label .control input {
+.control label,
+.control input {
   display: block;
 }
 
@@ -27,7 +28,7 @@
 .control input:focus {
   outline: none;
   border-color: #4f005f;
-  background: #46dbfc;
+  background: #f6dbfc;
 }
 
 .control.invalid input {

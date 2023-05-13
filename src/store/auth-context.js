@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const AuthContext = React.createContext({
   isLoggedIn: false,
@@ -23,14 +23,14 @@ export const AuthContextProvider = (props) => {
   };
 
   const loginHandler = () => {
-    localStorage.setItem("isLogged", "1");
+    localStorage.setItem("isLoggedIn", "1");
     setIsLoggedIn(true);
   };
 
   return (
     <AuthContext.Provider
       value={{
-        isLoggedIn: logoutHandler,
+        isLoggedIn: isLoggedIn,
         onLogout: logoutHandler,
         onLogin: loginHandler,
       }}

@@ -16,7 +16,7 @@
   color: white;
 }
 
-.nav a:honor,
+.nav a:hover,
 .nav a:active {
   color: #f3cafb;
 }
@@ -30,6 +30,10 @@
   cursor: pointer;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.26);
   border-radius: 20px;
+}
+
+.nav button:focus {
+  outline: none;
 }
 
 .nav button:hover,
